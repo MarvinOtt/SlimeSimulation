@@ -1,5 +1,7 @@
 # SlimeSimulation
 
+![Examples](SlimeSimulationExamples.png)
+
 ## Features
 * Multi-particle simulations (up to 2 particles)
 * Background support

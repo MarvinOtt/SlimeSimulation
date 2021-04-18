@@ -47,3 +47,10 @@ The main application files are located under the src folder.
 ## Credit
 This project is inspired from:
 https://www.youtube.com/watch?v=X-iSQQgOd1A&t=1s&ab_channel=SebastianLague
+
+## GIFS
+
+<p float="left">
+  <img src="/SlimeGif1.gif" width="49%" />
+  <img src="/SlimeGif2.gif" width="49%" /> 
+</p>

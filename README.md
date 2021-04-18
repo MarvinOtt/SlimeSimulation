@@ -10,7 +10,7 @@
 * Auto rotate rules and settings
 
 ## Configuration
-Configurations can be done in the **setting.txt** file\
+Configurations can be done in the **settings.txt** file\
 Following configurations can be done:
 1. Start application in background for the selected monitor
 2. Default monitor

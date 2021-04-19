@@ -30,6 +30,12 @@
 #include "../include/ImGui/imgui_impl_dx12.h"
 #include "../include/ImGui/imgui_internal.h"
 
+#ifdef _DEBUG 
+#include <csignal>
+#define BOOST_STACKTRACE_USE_WINDBG
+#include <boost/stacktrace.hpp>
+#endif
+
 using namespace DirectX;
 using namespace std::chrono;
 

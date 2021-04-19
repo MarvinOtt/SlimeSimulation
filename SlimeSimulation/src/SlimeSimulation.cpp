@@ -1,7 +1,30 @@
 #include "SlimeSimulation.h"
 
+#ifdef _DEBUG 
+void signalHandler(int signum)
+{
+
+	ofstream file;
+	file.open("log.txt");
+	file << boost::stacktrace::stacktrace();
+	file.close();
+	msgBox(string("Critical Error: See log file"));
+	exit(signum);
+}
+
+void my_terminate_handler()
+{
+	signalHandler(0);
+}
+#endif
+
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
 {
+#ifdef _DEBUG 
+	signal(SIGSEGV, signalHandler);
+	set_terminate(my_terminate_handler);
+#endif
+
 	SetProcessDPIAware();
 	srand((UINT)time(NULL));
 	if (!Monitor::GetMonitorData())
@@ -34,6 +57,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	mainWindow->Show(SW_SHOW);
 	IsInitDone = true;
 
+
 	// Main loop
 	while (true)
 	{
@@ -59,7 +83,6 @@ bool InitD3D()
 
 	mainHeap = new DescriptorHeap(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV, D3D12_DESCRIPTOR_HEAP_FLAG_SHADER_VISIBLE);
 	mainHeap->Create(graphicsDevice, 1 + 3);
-
 
 	// Setup Dear ImGui context
 	IMGUI_CHECKVERSION();

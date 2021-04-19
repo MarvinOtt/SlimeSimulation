@@ -7,21 +7,21 @@
 * Background support
 * Different colors for particles
 * Changing the current configuration in realtime
-* Auto rotate rules and settings
+* Automatically cycle rules and settings
 
 ## Configuration
-Configurations can be done in the **settings.txt** file\
-Following configurations can be done:
-1. Start application in background for the selected monitor
+The configuration can be changed in the **settings.txt** file\
+Following settings can be adjusted:
+1. Start application in the background for the selected monitor
 2. Default monitor
 3. V-Sync factor
 4. Background Color
 5. Time between setting changes
 6. Number of frames when a transition happens
-7. Colors for the particles
+7. Color for the particles
 8. All the rules and their configurations
 
-A rule configuration can be added by incrementing the configuration number for the specific rule and adding the *configuration block*.\
+A rule configuration can be added by incrementing the configuration number for that specific rule and adding the *configuration block*.\
 The *configuration block* can be copied by pressing the Copy2Clip button.
 A *configuration block* consists of the following 7 things:
 * Angle of the left and right sensor
@@ -34,7 +34,7 @@ A *configuration block* consists of the following 7 things:
 
 ## Controls
 
-When the application is in the background pressing "CTRL + LEFT_ALT + G" brings it back into windowed mode.
+When the application is in the background press "CTRL + LEFT_ALT + G" to bring it back into windowed mode.
 
 ## Requirements
 
@@ -44,12 +44,12 @@ When the application is in the background pressing "CTRL + LEFT_ALT + G" brings 
 
 ## Implementation
 
-This project is implemented in C++ with the DirectX 12 API and imgui for the GUI.\
-In order to improve the ease of use of DirectX a small Engine has been writen. This Engine is located in the [Engine folder](SlimeSimulation/Engine).\
-The main application files are located under the src folder.
+This project is implemented in C++ with the DirectX 12 API and ImGui for the GUI.\
+In order to improve the usability of DirectX a small Engine has been writen. This Engine is located in the [Engine folder](SlimeSimulation/Engine).\
+The main application files are located in the src folder.
 
 ## Credit
-This project is inspired from:
+Inspiration for this project was taken from:
 https://www.youtube.com/watch?v=X-iSQQgOd1A&t=1s&ab_channel=SebastianLague
 
 ## GIFS

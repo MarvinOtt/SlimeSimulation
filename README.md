@@ -32,6 +32,10 @@ A *configuration block* consists of the following 7 things:
 * Diffuse strength
 * Decay strength
 
+## Controls
+
+When the application is in the background pressing "CTRL + LEFT_ALT + G" brings it back into windowed mode.
+
 ## Requirements
 
 * Windows 7, 8 or 10

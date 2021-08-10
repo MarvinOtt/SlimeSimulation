@@ -3,7 +3,7 @@
 ![Examples](SlimeSimulationExamples.png)
 
 ## Features
-* Multi-particle simulations (up to 2 particles)
+* Multi-particle simulations (up to 2 different particles)
 * Background support
 * Different colors for particles
 * Changing the current configuration in realtime

@@ -1,4 +1,4 @@
-# SlimeSimulation
+# Slime Simulation
 
 ![Examples](SlimeSimulationExamples.png)
 

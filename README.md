@@ -46,6 +46,7 @@ When the application is in the background press "CTRL + LEFT_ALT + G" to bring i
 
 This project is implemented in C++ with the DirectX 12 API and ImGui for the GUI.\
 In order to improve the usability of DirectX a small Engine has been writen. This Engine is located in the [Engine folder](SlimeSimulation/Engine).\
+The Engine is the same as in the project [D3D12 Engine Test](https://github.com/MarvinOtt/D3D12_Engine_Test).\
 The main application files are located in the src folder.
 
 ## Credit

@@ -1,0 +1,17 @@
+ 0# boost::stacktrace::basic_stacktrace<std::allocator<boost::stacktrace::frame> >::init at C:\Users\marvi\Downloads\boost_1_75_0\boost_1_75_0\boost\stacktrace\stacktrace.hpp:76
+ 1# boost::stacktrace::basic_stacktrace<std::allocator<boost::stacktrace::frame> >::basic_stacktrace<std::allocator<boost::stacktrace::frame> > at C:\Users\marvi\Downloads\boost_1_75_0\boost_1_75_0\boost\stacktrace\stacktrace.hpp:129
+ 2# signalHandler at C:\Users\marvi\OneDrive\Dokumente\Visual Studio 2015\Projects\SlimeSimulation\SlimeSimulation\src\SlimeSimulation.cpp:9
+ 3# seh_filter_exe in ucrtbased
+ 4# `__scrt_common_main_seh'::`1'::filt$0 at D:\a01\_work\26\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:304
+ 5# _C_specific_handler in VCRUNTIME140D
+ 6# _chkstk in ntdll
+ 7# RtlRaiseException in ntdll
+ 8# KiUserExceptionDispatcher in ntdll
+ 9# InitD3D at C:\Users\marvi\OneDrive\Dokumente\Visual Studio 2015\Projects\SlimeSimulation\SlimeSimulation\src\SlimeSimulation.cpp:96
+10# WinMain at C:\Users\marvi\OneDrive\Dokumente\Visual Studio 2015\Projects\SlimeSimulation\SlimeSimulation\src\SlimeSimulation.cpp:54
+11# invoke_main at D:\a01\_work\26\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:107
+12# __scrt_common_main_seh at D:\a01\_work\26\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288
+13# __scrt_common_main at D:\a01\_work\26\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:331
+14# WinMainCRTStartup at D:\a01\_work\26\s\src\vctools\crt\vcstartup\src\startup\exe_winmain.cpp:17
+15# BaseThreadInitThunk in KERNEL32
+16# RtlUserThreadStart in ntdll

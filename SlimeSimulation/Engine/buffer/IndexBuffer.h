@@ -85,7 +85,7 @@ bool IndexBuffer<T>::SetData(GraphicsDevice* device, T* vertices, int numindices
     // we are now creating a command with the command list to copy the data from
     // the upload heap to the default heap
     
-    s(device->commandList->commandList, buffer, uploadheap, 0, 0, 1, &vertexData);
+    UpdateSubresources(device->commandList->commandList, buffer, uploadheap, 0, 0, 1, &vertexData);
 
     // transition the vertex buffer data from copy destination state to vertex buffer state
     device->commandList->commandList->ResourceBarrier(1, &CD3DX12_RESOURCE_BARRIER::Transition(buffer, D3D12_RESOURCE_STATE_COPY_DEST, D3D12_RESOURCE_STATE_VERTEX_AND_CONSTANT_BUFFER));

@@ -10,12 +10,12 @@ class Event final
 private:
     std::unordered_map<std::wstring, T> namedListeners;
 public:
-    void subscribe(const std::wstring &methodName, T namedEventHandlerMethod)
+    void subscribe(const std::wstring& methodName, T namedEventHandlerMethod)
     {
         if (namedListeners.find(methodName) == namedListeners.end())
             namedListeners[methodName] = namedEventHandlerMethod;
     }
-    void unsubscribe(const std::wstring &methodName)
+    void unsubscribe(const std::wstring& methodName)
     {
         if (namedListeners.find(methodName) != namedListeners.end())
             namedListeners.erase(methodName);

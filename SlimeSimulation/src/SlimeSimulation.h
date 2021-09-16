@@ -33,7 +33,7 @@
 #ifdef _DEBUG 
 #include <csignal>
 #define BOOST_STACKTRACE_USE_WINDBG
-#include <boost/stacktrace.hpp>
+#include <boost/stacktrace.hpp>	
 #endif
 
 using namespace DirectX;
@@ -41,7 +41,7 @@ using namespace std::chrono;
 
 D3D12_INPUT_ELEMENT_DESC inputLayout[] =
 {
-	{ "POSITION", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0, 0, D3D12_INPUT_CLASSIFICATION_PER_VERTEX_DATA, 0 }
+    { "POSITION", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0, 0, D3D12_INPUT_CLASSIFICATION_PER_VERTEX_DATA, 0 }
 };
 
 // Input Stuff
